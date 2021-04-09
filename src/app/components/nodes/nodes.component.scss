@@ -1,0 +1,30 @@
+.section {
+
+    margin: 50px 0;
+
+    form {
+        width: 70%;
+        margin: 0 auto;
+
+        .btn-create-new {
+            float: right;
+        }
+    }
+
+    hr {
+        width: 70%;
+        margin: 50px auto;
+    }
+
+    .wrapper-table {
+        width: 70%;
+        margin: 0 auto;
+
+        .table {
+            .thead-light {
+                background-color: #1abc9c;
+                color: #fff;
+            }
+        }
+    }
+}

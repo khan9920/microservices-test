@@ -1,0 +1,84 @@
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="title">Node Management</p>
+            </div>
+            <div class="col-md-12">
+                <form (submit)="onSubmit(form)" #form="ngForm">
+                    <div class="wrapper-card">
+                        <p class="sub-title">Manage Nodes</p>
+
+                        <div class="wrapper-form-field">
+                            <select name="manageNode" ngModel>
+                                <option value="node-1">Manage Node 1</option>
+                                <option value="node-1">Manage Node 2</option>
+                                <option value="node-1">Manage Node 3</option>
+                                <option value="node-1">Manage Node 4</option>
+                            </select>
+    
+                            <div class="wrapper-actions">
+                                <button type="button" class="btn-img btn-remove">
+                                    <img src="/assets/icons/icon-minus.svg" alt="Icon Minus">
+                                </button>
+                                <button type="button" class="btn-img btn-add">
+                                    <img src="/assets/icons/icon-plus.svg" alt="Icon Plus">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-card">
+                        <p class="sub-title">Jump Nodes</p>
+
+                        <div class="wrapper-form-field">
+                            <select name="jumpNode" ngModel>
+                                <option value="j-node-1">Jump Node 1</option>
+                                <option value="j-node-1">Jump Node 2</option>
+                                <option value="j-node-1">Jump Node 3</option>
+                                <option value="j-node-1">Jump Node 4</option>
+                            </select>
+    
+                            <div class="wrapper-actions">
+                                <button type="button" class="btn-img btn-remove">
+                                    <img src="/assets/icons/icon-minus.svg" alt="Icon Minus">
+                                </button>
+                                <button type="button" class="btn-img btn-add">
+                                    <img src="/assets/icons/icon-plus.svg" alt="Icon Plus">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-card">
+                        <p class="sub-title">Authorized Admin</p>
+
+                        <div class="wrapper-form-field">
+                            <select name="user" ngModel>
+                                <option value="user-1">Admin User Name 1</option>
+                                <option value="user-1">Admin User Name 2</option>
+                                <option value="user-1">Admin User Name 3</option>
+                                <option value="user-1">Admin User Name 4</option>
+                            </select>
+    
+                            <div class="wrapper-actions">
+                                <button type="button" class="btn-img btn-remove">
+                                    <img src="/assets/icons/icon-minus.svg" alt="Icon Minus">
+                                </button>
+                                <button type="button" class="btn-img btn-add">
+                                    <img src="/assets/icons/icon-plus.svg" alt="Icon Plus">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-button">
+                        <button type="button" class="btn-main">Delete</button>
+                        <button type="button" class="btn-main" routerLink="/">Cancel & Exit</button>
+                        <button type="submit" class="btn-main">Save & Exit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

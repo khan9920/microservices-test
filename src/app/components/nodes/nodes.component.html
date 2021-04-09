@@ -1,0 +1,54 @@
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form (submit)="onSearch(form)" #form="ngForm">
+                    <p class="title">Search filters</p>
+
+                    <div class="wrapper-form-field">
+                        <input type="text" placeholder="Authorised Admin" name="user" ngModel>
+                    </div>
+
+                    <div class="wrapper-form-field">
+                        <input type="text" placeholder="Manage Nodes" name="manageNode" ngModel>
+                    </div>
+
+                    <div class="wrapper-form-field">
+                        <input type="text" placeholder="Jump Nodes" name="jumpNode" ngModel>
+                    </div>
+
+                    <button type="submit" class="btn-main">Search</button>
+
+                    <button type="button" class="btn-main btn-create-new" routerLink="create-node">Create New</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="col-md-12">
+                <div class="wrapper-table">
+                    <p class="title">Results</p>
+                      
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Authorized Admin</th>
+                                <th scope="col">Manage Node</th>
+                                <th scope="col">Jump Node</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let node of nodes">
+                                <th scope="row">{{ node._id }}</th>
+                                <td>{{ node.user }}</td>
+                                <td>{{ node.manageNode }}</td>
+                                <td>{{ node.jumpNode }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

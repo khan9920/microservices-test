@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+// Bootstrap import
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+// Golab re-usable styles
+input:focus,
+button:focus,
+select:focus {
+    outline: 0;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrapper-form-field {
+    margin: 20px 0;
+
+    input,
+    select {
+        width: 100%;
+        border: 2px solid #1abc9c;
+        border-radius: 4px;
+        padding: 5px 10px;
+    }
+}
+
+.btn-main {
+    background-color: #1abc9c;
+    color: #fff;
+    border: 2px solid #1abc9c;
+    padding: 5px 10px;
+    min-width: 100px;
+    border-radius: 4px;
+}
+
+.btn-img {
+    background: none;
+    border: 0;
+
+    img {
+        width: 25px;
+    }
+}
